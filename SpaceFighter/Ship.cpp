@@ -30,6 +30,7 @@ void Ship::Hit(const float damage)
 
 	GameObject::Deactivate();
 	GetCurrentLevel()->SpawnExplosion(this);
+	std::cout << "Ship destroyed!" << std::endl;
 }
 
 IAttachment* Ship::GetAttachment(const std::string& key)
